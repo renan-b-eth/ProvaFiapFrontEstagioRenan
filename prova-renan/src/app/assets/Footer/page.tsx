@@ -1,6 +1,6 @@
 import "./footer.css";
-import LogoFiap from "../assets/logo-fiap.png";
 import Image from "next/image";
+import Seta from "../imgs/mais.png";
 import React, { useState, useEffect } from "react";
 
 const Footer = () => {
@@ -16,12 +16,16 @@ const Footer = () => {
 
   return (
     <>
+    
       <footer className="container3">
         <h3 className="cor-branca fonte-padrao3">FAQ</h3>
         <p className="cor-fiap">Dúvidas Frequentes</p>
 
         <div className="container">
+        
           <div className="perguntas">
+          <Image src={Seta} alt="Seta FIAP" className="pointer" onMouseEnter={() => handleMouseEnter("matricula")}
+              onMouseLeave={handleMouseLeave}/>
             <p
               className="cor-branca pergunta"
               onMouseEnter={() => handleMouseEnter("matricula")}
@@ -41,7 +45,7 @@ const Footer = () => {
             )}
             {selectedQuestion === "matricula" && (
               <hr
-                className={`resposta-hr ${
+                className={`resposta-hr linha2 ${
                   selectedQuestion === "matricula" ? "show" : ""
                 }`}
               />
@@ -49,6 +53,8 @@ const Footer = () => {
           </div>
 
           <div className="perguntas">
+          <Image src={Seta} alt="Seta FIAP" className="pointer" onMouseEnter={() => handleMouseEnter("certificado")}
+              onMouseLeave={handleMouseLeave}/>
             <p
               className="cor-branca pergunta"
               onMouseEnter={() => handleMouseEnter("certificado")}
@@ -68,7 +74,7 @@ const Footer = () => {
             )}
             {selectedQuestion === "certificado" && (
               <hr
-                className={`resposta-hr ${
+                className={`resposta-hr linha2 ${
                   selectedQuestion === "certificado" ? "show" : ""
                 }`}
               />
@@ -76,6 +82,8 @@ const Footer = () => {
           </div>
 
           <div className="perguntas">
+          <Image src={Seta} alt="Seta FIAP" className="pointer" onMouseEnter={() => handleMouseEnter("duvidas")}
+              onMouseLeave={handleMouseLeave}/>
             <p
               className="cor-branca pergunta"
               onMouseEnter={() => handleMouseEnter("duvidas")}
@@ -96,7 +104,7 @@ const Footer = () => {
             )}
             {selectedQuestion === "duvidas" && (
               <hr
-                className={`resposta-hr ${
+                className={`resposta-hr linha2 ${
                   selectedQuestion === "duvidas" ? "show" : ""
                 }`}
               />
@@ -104,6 +112,8 @@ const Footer = () => {
           </div>
 
           <div className="perguntas">
+          <Image src={Seta} alt="Seta FIAP" className="pointer" onMouseEnter={() => handleMouseEnter("duracao")}
+              onMouseLeave={handleMouseLeave}/>
             <p
               className="cor-branca pergunta"
               onMouseEnter={() => handleMouseEnter("duracao")}
@@ -122,7 +132,7 @@ const Footer = () => {
             )}
             {selectedQuestion === "duracao" && (
               <hr
-                className={`resposta-hr ${
+                className={`resposta-hr linha2 ${
                   selectedQuestion === "duracao" ? "show" : ""
                 }`}
               />
@@ -130,6 +140,8 @@ const Footer = () => {
           </div>
 
           <div className="perguntas">
+          <Image src={Seta} alt="Seta FIAP" className="pointer" onMouseEnter={() => handleMouseEnter("material")}
+              onMouseLeave={handleMouseLeave}/>
             <p
               className="cor-branca pergunta"
               onMouseEnter={() => handleMouseEnter("material")}
@@ -151,14 +163,16 @@ const Footer = () => {
             )}
             {selectedQuestion === "material" && (
               <hr
-                className={`resposta-hr ${
+                className={`resposta-hr linha2 ${
                   selectedQuestion === "material" ? "show" : ""
                 }`}
               />
             )}
           </div>
 
-          <div className="conclusao">
+          <div className="conclusao position6">
+          <Image src={Seta} alt="Seta FIAP" className="pointer" onMouseEnter={() => handleMouseEnter("conclusao")}
+              onMouseLeave={handleMouseLeave}/>
             <p
               className="cor-branca pergunta"
               onMouseEnter={() => handleMouseEnter("conclusao")}
@@ -179,7 +193,7 @@ const Footer = () => {
             )}
             {selectedQuestion === "conclusao" && (
               <hr
-                className={`resposta-hr ${
+                className={`resposta-hr linha2 ${
                   selectedQuestion === "conclusao" ? "show" : ""
                 }`}
               />

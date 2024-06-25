@@ -22,3 +22,22 @@
     transition: background-color 0.3s ease; 
     z-index: 1;
   }
+
+  .efeito-logo {
+    display: flex; 
+    animation: efeito 4s linear; 
+    white-space: nowrap; 
+  }
+  
+
+  
+  @keyframes efeito {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0; 
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

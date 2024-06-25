@@ -57,6 +57,10 @@ a:hover {
     position: relative;
     right: 100px;
 }
+.position7{
+    position: relative;
+    top: -580px;
+}
 
 .cor-cinza {
     color: #8A959B;
@@ -177,6 +181,8 @@ a:hover {
     }
 }
 
+
+
 .animacao2 {
     animation: animacao2 1s;
 }
@@ -287,4 +293,26 @@ hr {
   }
 .container3{
     margin: 50px;
+}
+
+.position6{
+    position: relative;
+    top: -200px;
+}
+
+.animacao4 {
+    animation: animacao4 1.5s;
+}
+
+@keyframes animacao4 {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        top: 0px;
+        transform: scale(1);
+    }
 }

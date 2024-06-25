@@ -13,7 +13,7 @@ const Header = () =>{
             <main>
                 <section className="cor-background">
                         <div className="logo">
-                        <Image src={LogoFiap} alt="Logo FIAP" className="logo-centro"/>
+                        <Image src={LogoFiap} alt="Logo FIAP" className="logo-centro efeito-logo"/>
                         </div>
                 </section>
                

@@ -73,3 +73,22 @@
   .container3{
     margin: 50px;
 }
+.cor-fiap2{
+  color:#F80D5A;
+}
+.position6{
+  position: relative;
+  top: 100px;
+}
+
+.linha2{
+  background-color: #F80D5A;
+    height: 1px;
+    width: 120px;
+    border: none;
+    position: relative;
+    right: 40px;
+}
+.pointer:hover{
+  cursor: pointer;
+}

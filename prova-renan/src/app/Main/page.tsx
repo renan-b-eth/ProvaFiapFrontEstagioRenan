@@ -2,7 +2,11 @@
 import "./main.css";
 import React, { useState, useEffect, useLayoutEffect, createContext } from 'react';
 import LogoIntro from '../assets/imgs/intro.png'
+import BackInicial from '../assets/imgs/back.png'
 import Image from "next/image";
+import Seta from "../assets/imgs/seta.png";
+import Feel from "../assets/imgs/feelthefuture.png";
+import Mais from "../assets/imgs/mais.png";
 import { useSpring, animated as a } from 'react-spring'; /* precisa instalar esse hook */
 import { useLocation } from 'react-router-dom'; /*instalar esse tambem */
 import { useRef } from 'react';
@@ -60,7 +64,7 @@ const Main = () =>{
                 <section>
                     <div id="centro">
                         <span class="posicao-texto">
-                            <p className="fonte-padrao cor-branca index-tras position-texto-direta animacao2">A Melhor Faculdade</p>
+                            <p className="fonte-padrao cor-branca index-tras position-texto-direta animacao2">A Melhor <span className="cor-fiap2">Faculdade</span></p>
                             <div>
                                 <p className="fonte-padrao cor-branca position-fonte-tecnologia index-tras animacao">de Tecnologia</p>
                             </div>
@@ -71,6 +75,14 @@ const Main = () =>{
                     </div>
                 </section>
 
+                <div  className="centro-intro position7">
+                            <Image className= "efeito-imagem animacao4" src={Feel} alt="Feel" width={1200} height={600}/>
+                </div>
+
+                <div  className="centro-intro position6">
+                            <Image className= "efeito-imagem " src={BackInicial} alt="Intro" width={1200} height={600}/>
+                </div>
+  
                     <section className="animated-text-container">
                         <span>
                             <div className="animation-container">
@@ -121,6 +133,7 @@ const Main = () =>{
                     </ul>
                     </nav>
                     </div>
+                    <Image src={Seta} alt="Seta FIAP" className=""/>
                     <p className="fonte-padrao cor-branca">Cursos</p>
                     <p className="fonte-padrao cor-fiap">Cursos de Curta Duracão</p>
                     
