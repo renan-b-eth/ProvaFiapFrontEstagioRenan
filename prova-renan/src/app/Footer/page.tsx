@@ -2,6 +2,7 @@ import "./footer.css";
 import Image from "next/image";
 import Seta from "../assets/imgs/mais.png";
 import FiapLogo2 from "../assets/imgs/fiaplogo2.png";
+import LetsRock from "../assets/imgs/lets-rock.png"
 import React, { useState, useEffect } from "react";
 
 const Footer = () => {
@@ -200,13 +201,15 @@ const Footer = () => {
               />
             )}
           </div>
-      <Image src={FiapLogo2} alt="Seta FIAP" className="pointer centro3" width={250} height={80}/>
+      <Image src={FiapLogo2} alt="Fiap FIAP" className="pointer centro3" width={250} height={80}/>
         </div>
       </footer>
       <center><p className="cor-fiap">FIAP © 2024 - Todos os Direitos reservados.</p></center>
+      <Image src={LetsRock} alt="Lets FIAP" className="pointer centro4" width={250} height={200}/>
       <p className="cor-fiap">FEITO POR: RENAN BEZERRA DOS SANTOS - MONITOR FIAP</p>
       <p className="cor-fiap2">LINKEDIN: <a href="https://www.linkedin.com/in/renan-b-eth/" className="cor-fiap2">https://www.linkedin.com/in/renan-b-eth/ </a></p>
     </>
+
   );
 };
 

@@ -1,7 +1,9 @@
+
 .cor-background-principal {
     background-color: #060606;
     height: 100%;
     width: 100%;
+    
 }
 
 .fonte-padrao {
@@ -375,7 +377,7 @@ hr {
 }
 
 .animacao4 {
-    animation: animacao4 1.5s;
+    animation: animacao4 5s;
 }
 
 @keyframes animacao4 {
