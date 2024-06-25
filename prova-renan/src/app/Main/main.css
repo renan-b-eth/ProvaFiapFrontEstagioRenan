@@ -2,15 +2,58 @@
 
 .cor-background-principal{
     background-color: #060606;
-    height: 80vh;
+    height: 800vh;
     width: 100%;
 }
 .fonte-padrao{
     font-family: 'Gotham HTF';
     font-size: 80px;
 }
+.fonte-2{
+    font-family: 'Gotham HTF';
+    font-size: 40px;
+}
+.fonte-3{
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: #454C4F; 
+    font-family: 'Gotham HTF';
+    font-size: 60px;
+}
+.italico{
+    font-style: italic;
+}
 .cor-branca{
     color: white;
+}
+.cor-fiap{
+    color: #F80D5A;
+    font-family: 'Gotham HTF';
+    font-size: 30px;
+}
+.fonte-padrao3{
+    font-family: 'Gotham HTF';
+    font-size: 50px;
+}
+.fonte-padrao4{
+    font-family: 'Gotham HTF';
+    font-size: 13px;
+}
+a:hover{
+    cursor: pointer;
+}
+.linha{
+    background-color: #8A959B;
+    height: 1px;
+    width: 1000px;
+    border: none;
+    position: relative;
+    right: 100px;
+}
+.cor-cinza{
+    color: #8A959B;
+}
+.cor-transparente{
+    color: transparent;
 }
 .cor-cinza{
     color: #4c4b4c;
@@ -90,3 +133,27 @@
 .animacao2 {
     animation: animacao2 1s;
 }
+
+hr {
+    border: 1px solid #ccc;
+    height: 5px; 
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+  }
+
+.centro-intro{
+    display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+.span-tecnologia{
+    display: block;
+}
+.span-inovacao{
+    display: none;
+}
+.span-negocios{
+    display: none;
+}
+
+
