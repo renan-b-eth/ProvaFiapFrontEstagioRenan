@@ -139,7 +139,6 @@ a:hover {
 /*essa é a parte da animacao usando keyframes*/
 .opacidade {
     opacity: 1;
-    transform: ;
 }
 
 .titulos {
@@ -148,6 +147,10 @@ a:hover {
     top: 400px;
 
 
+}
+.position9{
+    position: relative;
+    top: -500px;
 }
 
 .titulos-item {
@@ -179,6 +182,28 @@ a:hover {
         opacity: 1;
         top: 0px;
     }
+}
+
+.efeito-imagem2{
+    animation: animacao10 20s;
+}
+
+@keyframes animacao10 {
+    0% {
+        opacity: 0;
+        position: relative;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.efeitohover:hover{
+    border: 5px solid #F80D5A;
+    border-radius: 100%;
+    animation-duration: 2s;
+    cursor: pointer;
 }
 
 
@@ -293,11 +318,14 @@ hr {
   }
 .container3{
     margin: 50px;
+   
+
 }
+
 
 .position6{
     position: relative;
-    top: -200px;
+    top: -500px;
 }
 
 .animacao4 {

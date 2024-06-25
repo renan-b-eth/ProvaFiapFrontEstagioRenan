@@ -6,6 +6,7 @@ import BackInicial from '../assets/imgs/back.png'
 import Image from "next/image";
 import Seta from "../assets/imgs/seta.png";
 import Feel from "../assets/imgs/feelthefuture.png";
+import Imagem from "../assets/imgs/imagem.png";
 import Mais from "../assets/imgs/mais.png";
 import { useSpring, animated as a } from 'react-spring'; /* precisa instalar esse hook */
 import { useLocation } from 'react-router-dom'; /*instalar esse tambem */
@@ -116,12 +117,12 @@ const Main = () =>{
                             <hr></hr>
                         </span>
                     </section>
-
-                <section>
+                    <Image className= "efeito-imagem2 efeitohover" src={Imagem} alt="Imagem"/>
+                {/* <section>
 
                     <Agua></Agua>
-
-                </section>
+                    Infelizmente não consegui realizar a animação da agua.
+                </section> */}
 
                 <section className="container3">
                     <div className="titulos">
@@ -133,6 +134,7 @@ const Main = () =>{
                     </ul>
                     </nav>
                     </div>
+                    
                     <Image src={Seta} alt="Seta FIAP" className=""/>
                     <p className="fonte-padrao cor-branca">Cursos</p>
                     <p className="fonte-padrao cor-fiap">Cursos de Curta Duracão</p>
