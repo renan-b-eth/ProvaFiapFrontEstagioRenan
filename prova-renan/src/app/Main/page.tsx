@@ -11,7 +11,7 @@ import Mais from "../assets/imgs/mais.png";
 import { useSpring, animated as a } from 'react-spring'; /* precisa instalar esse hook */
 import { useLocation } from 'react-router-dom'; /*instalar esse tambem */
 import { useRef } from 'react';
-import Footer from "../assets/Footer/page";
+import Footer from "../Footer/page";
 import Agua from "../Agua/page";
 
 

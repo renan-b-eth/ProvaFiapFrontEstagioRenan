@@ -1,6 +1,6 @@
 import "./footer.css";
 import Image from "next/image";
-import Seta from "../imgs/mais.png";
+import Seta from "../assets/imgs/mais.png";
 import React, { useState, useEffect } from "react";
 
 const Footer = () => {
@@ -201,6 +201,8 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+      <p className="cor-fiap">FEITO POR: RENAN BEZERRA DOS SANTOS - MONITOR FIAP</p>
+      <p className="cor-fiap2">LINKEDIN: <a href="https://www.linkedin.com/in/renan-b-eth/" className="cor-fiap2">https://www.linkedin.com/in/renan-b-eth/ </a></p>
     </>
   );
 };
