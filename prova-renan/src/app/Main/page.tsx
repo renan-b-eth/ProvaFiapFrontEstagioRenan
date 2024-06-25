@@ -78,9 +78,9 @@ const Main = () =>{
                     </div>
                 </section>
 
-                <Image src={Seta} alt="Seta FIAP" className="position16" width={250} height={250}/>
+                <a href="#feel"><Image src={Seta} alt="Seta FIAP" className="position16" width={250} height={250}/></a>
 
-                <div  className="centro-intro position7">
+                <div  className="centro-intro position7" id="feel">
                             <Image className= "efeito-imagem animacao4" src={Feel} alt="Feel" width={600} height={300}/>
                 </div>
 
