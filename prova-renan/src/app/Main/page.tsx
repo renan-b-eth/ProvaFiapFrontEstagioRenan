@@ -6,6 +6,8 @@ import Image from "next/image";
 import { useSpring, animated as a } from 'react-spring'; /* precisa instalar esse hook */
 import { useLocation } from 'react-router-dom'; /*instalar esse tambem */
 import { useRef } from 'react';
+import Footer from "../assets/Footer/page";
+import Agua from "../Agua/page";
 
 const Main = () =>{
 
@@ -47,8 +49,11 @@ const Main = () =>{
 
   const [selected, setSelected] = useState(null);
 
+  
+
     return(
         <>
+ 
       
             <main className="cor-background-principal">
                 <section>
@@ -67,16 +72,28 @@ const Main = () =>{
 
                     <section className="animated-text-container">
                         <span>
-                            <p className="fonte-2 cor-branca">CURSOS E IMERSÕES. UMA NOVA CULTURA DE MERCADO.</p>
+                            <div className="animation-container">
+                                <div className="marquee-text">
+                                <p className="fonte-2 cor-branca">CURSOS E IMERSÕES. UMA NOVA CULTURA DE MERCADO. CURSOS E IMERSÕES. UMA NOVA CULTURA DE MERCADO.</p>
+                                </div>
+                            </div>
                             <hr></hr>
-                            <p className="fonte-2 cor-branca">TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO.</p>
+                            <div className="animation-container">
+                                <div className="marquee-text2">
+                                <p className="fonte-2 cor-branca">TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO. TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO. TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO.TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO.TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO.TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO.TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO.TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO.TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO.</p>
+                                </div>
+                            </div>
                             <hr></hr>
                         </span>
                         <div  className="centro-intro">
-                            <Image src={LogoIntro} alt="Intro" width={1200} height={600}/>
+                            <Image className= "efeito-imagem" src={LogoIntro} alt="Intro" width={1200} height={600}/>
                         </div>
                         <span>
-                            <p className="fonte-3 cor-transparente">SKILL ○  CONHECIMENTOS ○</p>
+                            <div className="animation-container2">
+                                <div className="marquee-text3">
+                                    <p className="fonte-3 cor-transparente">SKILL ○  CONHECIMENTOS ○</p>
+                                </div>
+                            </div>
                             <hr></hr>
                             <p className="fonte-3 italico cor-transparente">TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO.</p>
                             <hr></hr>
@@ -85,17 +102,20 @@ const Main = () =>{
 
                 <section>
 
+                    <Agua></Agua>
 
                 </section>
 
                 <section>
+                    <div className="titulos">
                                 <nav>
                     <ul>
-                        <li><a className="cor-branca" onClick={handleClick1} style={{ color: selected === event.target ? '#F80D5A' : 'white' }}>TECNOLOGIA</a></li>
-                        <li><a className="cor-branca" onClick={handleClick2} style={{ color: selected === event.target ? '#F80D5A' : 'white' }}>INOVACAO</a></li>
-                        <li><a className="cor-branca" onClick={handleClick3} style={{ color: selected === event.target ? '#F80D5A' : 'white' }}>NEGOCIOS</a></li>
+                        <li><a className="cor-branca titulos-item" onClick={handleClick1} style={{ color: selected === event.target ? '#F80D5A' : 'white' }}>TECNOLOGIA</a></li>
+                        <li><a className="cor-branca titulos-item" onClick={handleClick2} style={{ color: selected === event.target ? '#F80D5A' : 'white' }}>INOVACAO</a></li>
+                        <li><a className="cor-branca titulos-item" onClick={handleClick3} style={{ color: selected === event.target ? '#F80D5A' : 'white' }}>NEGOCIOS</a></li>
                     </ul>
                     </nav>
+                    </div>
                     <p className="fonte-padrao cor-branca">Cursos</p>
                     <p className="fonte-padrao cor-fiap">Cursos de Curta Duracão</p>
                     
@@ -121,6 +141,7 @@ const Main = () =>{
                         <p className="fonte-padrao4 cor-cinza">Perícia Forense Computacional • LIVE </p><hr className="linha"></hr>
                     </span>
                 </section>
+            <Footer></Footer>
             </main>
         </>
     )

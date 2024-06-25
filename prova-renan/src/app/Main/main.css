@@ -1,47 +1,55 @@
-
-
-.cor-background-principal{
+.cor-background-principal {
     background-color: #060606;
-    height: 800vh;
+    height: 100%;
     width: 100%;
 }
-.fonte-padrao{
+
+.fonte-padrao {
     font-family: 'Gotham HTF';
     font-size: 80px;
 }
-.fonte-2{
+
+.fonte-2 {
     font-family: 'Gotham HTF';
     font-size: 40px;
 }
-.fonte-3{
-    -webkit-text-stroke-width: 2px; 
-    -webkit-text-stroke-color: #454C4F; 
+
+.fonte-3 {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #454C4F;
     font-family: 'Gotham HTF';
     font-size: 60px;
 }
-.italico{
+
+.italico {
     font-style: italic;
 }
-.cor-branca{
+
+.cor-branca {
     color: white;
 }
-.cor-fiap{
+
+.cor-fiap {
     color: #F80D5A;
     font-family: 'Gotham HTF';
     font-size: 30px;
 }
-.fonte-padrao3{
+
+.fonte-padrao3 {
     font-family: 'Gotham HTF';
     font-size: 50px;
 }
-.fonte-padrao4{
+
+.fonte-padrao4 {
     font-family: 'Gotham HTF';
     font-size: 13px;
 }
-a:hover{
+
+a:hover {
     cursor: pointer;
 }
-.linha{
+
+.linha {
     background-color: #8A959B;
     height: 1px;
     width: 1000px;
@@ -49,20 +57,25 @@ a:hover{
     position: relative;
     right: 100px;
 }
-.cor-cinza{
+
+.cor-cinza {
     color: #8A959B;
 }
-.cor-transparente{
+
+.cor-transparente {
     color: transparent;
 }
-.cor-cinza{
+
+.cor-cinza {
     color: #4c4b4c;
 }
-.position-fonte-tecnologia{
+
+.position-fonte-tecnologia {
     position: relative;
     bottom: 100px;
 }
-.fonte-padrao-sobreposto{
+
+.fonte-padrao-sobreposto {
     font-family: 'Gotham HTF';
     font-size: 200px;
     font-weight: bold;
@@ -70,51 +83,83 @@ a:hover{
     bottom: 430px;
     opacity: 0.125;
 }
-#efeito-texto{
-    opacity: 0; /* Começa invisível */
-    transition: opacity 1s ease; /* Define a animação de opacidade */
+
+#efeito-texto {
+    opacity: 0;
+    /* Começa invisível */
+    transition: opacity 1s ease;
+    /* Define a animação de opacidade */
 }
-#centro{
+
+#centro {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     position: relative;
-    top: 0px; 
+    top: 0px;
 }
-.posicao-texto{
+
+.posicao-texto {
     position: relative;
     top: 120px;
 }
-.position-texto-direta{
+
+.position-texto-direta {
     position: relative;
-    left: 50px;;
+    left: 50px;
+    ;
 }
-.index-tras{
+
+.index-tras {
     z-index: 2;
     position: relative;
 }
-.index-frente{
+
+.index-frente {
     z-index: 1;
     position: relative;
 }
-.position-tec{
+
+.position-tec {
     position: relative;
     top: -50px;
 }
+
+.borda-agua {
+    color: red;
+    height: 5px;
+    width: 100%;
+}
+
 /*essa é a parte da animacao usando keyframes*/
-.opacidade{
+.opacidade {
     opacity: 1;
     transform: ;
 }
+
+.titulos {
+    position: relative;
+    right: -800px;
+    top: 400px;
+
+
+}
+
+.titulos-item {
+    margin-top: 100px;
+}
+
 @keyframes animacao {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
+
 .animacao {
     animation: animacao 5s;
 }
@@ -125,35 +170,110 @@ a:hover{
         position: relative;
         top: -20px;
     }
+
     100% {
         opacity: 1;
         top: 0px;
     }
 }
+
 .animacao2 {
     animation: animacao2 1s;
 }
 
 hr {
     border: 1px solid #ccc;
-    height: 5px; 
-    margin-top: 20px; 
-    margin-bottom: 10px; 
-  }
-
-.centro-intro{
-    display: flex; 
-  justify-content: center; 
-  align-items: center;
+    height: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
-.span-tecnologia{
+
+.centro-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.span-tecnologia {
     display: block;
 }
-.span-inovacao{
-    display: none;
-}
-.span-negocios{
+
+.span-inovacao {
     display: none;
 }
 
+.span-negocios {
+    display: none;
+}
 
+.animation-container {
+    overflow: hidden; 
+    width: 100%; 
+  }
+  
+  .marquee-text {
+    display: flex; 
+    animation: marquee 10s linear infinite; 
+    white-space: nowrap; 
+  }
+  
+  .marquee-text p {
+    margin-right: 10px; 
+  }
+
+  .marquee-text2 {
+    display: flex; 
+    animation: marquee2 10s linear infinite; 
+    white-space: nowrap; 
+  }
+  
+  .marquee-text2 p {
+    margin-right: 10px; 
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0); 
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes marquee2 {
+    0% {
+      transform: translateX(-100%); 
+    }
+    100% {
+      transform: translateX(0); 
+    }
+  }
+
+  .efeito-imagem{
+    animation: efeitoimagem 5s linear; 
+  }
+
+  @keyframes efeitoimagem {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      transform: 1;
+    }
+  }
+
+  .animation-container2 {
+    overflow: hidden;
+    height: 300px; /* Adjust height as needed */
+  }
+  
+  .marquee-text3 {
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    transform: translateY(0); /* Initial position: top */
+    transition: transform 0.5s ease; /* Define transition properties */
+  }
+  
+  .marquee-text3 p {
+    margin-bottom: 10px; /* Space between paragraphs */
+  }

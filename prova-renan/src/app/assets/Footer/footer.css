@@ -1,0 +1,72 @@
+.cor-branca{
+    color: white;
+}
+.cor-fiap{
+    color: #F80D5A;
+    font-family: 'Gotham HTF';
+    font-size: 30px;
+}
+.fonte-padrao3{
+    font-family: 'Gotham HTF';
+    font-size: 50px;
+}
+.fonte-padrao4{
+    font-family: 'Gotham HTF';
+    font-size: 13px;
+}
+.posicao{
+    position: relative;
+    top: -2500px;
+}
+.borda{
+    color:#F80D5A;
+    height: 5px;
+    width: 50px;
+    position: relative;
+    right: 80px;
+    border: none;
+}
+
+
+.cor-descricao{
+    color:#949B99;
+}
+.container{
+    display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 10px; 
+}
+
+
+.perguntas {
+    position: relative;
+    margin: 100px;
+  }
+  
+
+  .resposta {
+    opacity: 0; 
+    transition: opacity 2s ease; 
+    position: relative; 
+  }
+  
+  .resposta.show {
+    opacity: 1; 
+  }
+  
+  .resposta hr {
+    position: absolute; 
+    bottom: 0;
+    left: 0; 
+    width: 0; 
+    height: 2px; 
+    background-color: #fff;
+    transition: width 0.5s ease; 
+  }
+  
+  .resposta.show hr {
+    width: 100%; 
+  }
+  .resposta-hr:hover{
+    background-color: red;
+  }
