@@ -9,6 +9,7 @@ import { useRef } from 'react';
 import Footer from "../assets/Footer/page";
 import Agua from "../Agua/page";
 
+
 const Main = () =>{
 
     const props = useSpring({
@@ -88,14 +89,18 @@ const Main = () =>{
                         <div  className="centro-intro">
                             <Image className= "efeito-imagem" src={LogoIntro} alt="Intro" width={1200} height={600}/>
                         </div>
-                        <span>
-                            <div className="animation-container2">
-                                <div className="marquee-text3">
-                                    <p className="fonte-3 cor-transparente">SKILL ○  CONHECIMENTOS ○</p>
+                        <span className="position3">
+                            <div className="animation-container position4">
+                                <div className="marquee-text">
+                                    <p className="fonte-3 cor-transparente">SKILL ○  CONHECIMENTOS ○ SKILL ○  CONHECIMENTOS ○ SKILL ○  CONHECIMENTOS ○ SKILL ○  CONHECIMENTOS ○</p>
                                 </div>
                             </div>
-                            <hr></hr>
-                            <p className="fonte-3 italico cor-transparente">TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO.</p>
+                            <div className="animation-container position5">
+                                <div className="marquee-text2">
+                            <p className="fonte-3 italico cor-transparente">TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO. TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO. TECNOLOGIA, INOVAÇÃO E NEGÓCIOS. PRESENTE E FUTURO.</p>
+
+                            </div>
+                            </div>
                             <hr></hr>
                         </span>
                     </section>
@@ -106,7 +111,7 @@ const Main = () =>{
 
                 </section>
 
-                <section>
+                <section className="container3">
                     <div className="titulos">
                                 <nav>
                     <ul>

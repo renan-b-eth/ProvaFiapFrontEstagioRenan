@@ -277,3 +277,14 @@ hr {
   .marquee-text3 p {
     margin-bottom: 10px; /* Space between paragraphs */
   }
+  .position3{
+    position: relative;
+    top: -350px;
+  }
+  .position4{
+    position: relative;
+    top: 250px;
+  }
+.container3{
+    margin: 50px;
+}

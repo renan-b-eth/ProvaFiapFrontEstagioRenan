@@ -16,7 +16,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer>
+      <footer className="container3">
         <h3 className="cor-branca fonte-padrao3">FAQ</h3>
         <p className="cor-fiap">Dúvidas Frequentes</p>
 
