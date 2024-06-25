@@ -59,7 +59,7 @@ a:hover {
 }
 .position7{
     position: relative;
-    top: -580px;
+    top: -10%;
 }
 
 .cor-cinza {
@@ -87,6 +87,15 @@ a:hover {
     bottom: 430px;
     opacity: 0.125;
 }
+.position13{
+    position: relative;
+    left:50px;
+    bottom: 100px;
+}
+.position12{
+    position: relative;
+    left: 80px;
+}
 
 #efeito-texto {
     opacity: 0;
@@ -94,7 +103,30 @@ a:hover {
     transition: opacity 1s ease;
     /* Define a animação de opacidade */
 }
-
+.centro2{
+    position: relative;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.position16{
+    position: relative;
+    top: -230px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.position20{
+    position: relative;
+    left: 600px;
+    top: 50px;
+}
+ul {
+    list-style-type: none;
+  }
+.hover-fiap:hover{
+    color:#F80D5A;
+    cursor: pointer;
+}
 #centro {
     display: flex;
     align-items: center;
@@ -144,7 +176,7 @@ a:hover {
 .titulos {
     position: relative;
     right: -800px;
-    top: 400px;
+    top: 700px;
 
 
 }
@@ -181,6 +213,20 @@ a:hover {
     100% {
         opacity: 1;
         top: 0px;
+    }
+}
+
+.animacao15 {
+    animation: animacao15 15s;
+}
+
+@keyframes animacao15 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 

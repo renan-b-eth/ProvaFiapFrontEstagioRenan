@@ -27,7 +27,7 @@ const Footer = () => {
           <Image src={Seta} alt="Seta FIAP" className="pointer" onMouseEnter={() => handleMouseEnter("matricula")}
               onMouseLeave={handleMouseLeave}/>
             <p
-              className="cor-branca pergunta"
+              className="cor-branca pergunta hover-fiap"
               onMouseEnter={() => handleMouseEnter("matricula")}
               onMouseLeave={handleMouseLeave}
             >
@@ -56,7 +56,7 @@ const Footer = () => {
           <Image src={Seta} alt="Seta FIAP" className="pointer" onMouseEnter={() => handleMouseEnter("certificado")}
               onMouseLeave={handleMouseLeave}/>
             <p
-              className="cor-branca pergunta"
+              className="cor-branca pergunta hover-fiap"
               onMouseEnter={() => handleMouseEnter("certificado")}
               onMouseLeave={handleMouseLeave}
             >
@@ -85,7 +85,7 @@ const Footer = () => {
           <Image src={Seta} alt="Seta FIAP" className="pointer" onMouseEnter={() => handleMouseEnter("duvidas")}
               onMouseLeave={handleMouseLeave}/>
             <p
-              className="cor-branca pergunta"
+              className="cor-branca pergunta hover-fiap"
               onMouseEnter={() => handleMouseEnter("duvidas")}
               onMouseLeave={handleMouseLeave}
             >
@@ -115,7 +115,7 @@ const Footer = () => {
           <Image src={Seta} alt="Seta FIAP" className="pointer" onMouseEnter={() => handleMouseEnter("duracao")}
               onMouseLeave={handleMouseLeave}/>
             <p
-              className="cor-branca pergunta"
+              className="cor-branca pergunta hover-fiap"
               onMouseEnter={() => handleMouseEnter("duracao")}
               onMouseLeave={handleMouseLeave}
             >
@@ -143,7 +143,7 @@ const Footer = () => {
           <Image src={Seta} alt="Seta FIAP" className="pointer" onMouseEnter={() => handleMouseEnter("material")}
               onMouseLeave={handleMouseLeave}/>
             <p
-              className="cor-branca pergunta"
+              className="cor-branca pergunta hover-fiap"
               onMouseEnter={() => handleMouseEnter("material")}
               onMouseLeave={handleMouseLeave}
             >
@@ -170,11 +170,11 @@ const Footer = () => {
             )}
           </div>
 
-          <div className="conclusao position6">
+          <div className="conclusao position6 ">
           <Image src={Seta} alt="Seta FIAP" className="pointer" onMouseEnter={() => handleMouseEnter("conclusao")}
               onMouseLeave={handleMouseLeave}/>
             <p
-              className="cor-branca pergunta"
+              className="cor-branca pergunta hover-fiap"
               onMouseEnter={() => handleMouseEnter("conclusao")}
               onMouseLeave={handleMouseLeave}
             >

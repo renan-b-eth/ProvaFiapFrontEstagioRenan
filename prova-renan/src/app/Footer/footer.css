@@ -96,3 +96,7 @@
   a {
     text-decoration: none;
   }
+
+.hover-fiap:hover{
+  color: #F80D5A;
+}

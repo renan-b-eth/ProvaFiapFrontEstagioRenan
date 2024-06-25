@@ -4,6 +4,8 @@ import React, { useState, useEffect, useLayoutEffect, createContext } from 'reac
 import LogoIntro from '../assets/imgs/intro.png'
 import BackInicial from '../assets/imgs/back.png'
 import Image from "next/image";
+import LogoFiap from '../assets/logo-fiap.png'
+import Mec from '../assets/imgs/mec.png'
 import Seta from "../assets/imgs/seta.png";
 import Feel from "../assets/imgs/feelthefuture.png";
 import Imagem from "../assets/imgs/imagem.png";
@@ -64,7 +66,7 @@ const Main = () =>{
             <main className="cor-background-principal">
                 <section>
                     <div id="centro">
-                        <span class="posicao-texto">
+                        <span className="posicao-texto">
                             <p className="fonte-padrao cor-branca index-tras position-texto-direta animacao2">A Melhor <span className="cor-fiap2">Faculdade</span></p>
                             <div>
                                 <p className="fonte-padrao cor-branca position-fonte-tecnologia index-tras animacao">de Tecnologia</p>
@@ -76,8 +78,10 @@ const Main = () =>{
                     </div>
                 </section>
 
+                <Image src={Seta} alt="Seta FIAP" className="position16" width={250} height={250}/>
+
                 <div  className="centro-intro position7">
-                            <Image className= "efeito-imagem animacao4" src={Feel} alt="Feel" width={1200} height={600}/>
+                            <Image className= "efeito-imagem animacao4" src={Feel} alt="Feel" width={600} height={300}/>
                 </div>
 
                 <div  className="centro-intro position6">
@@ -117,7 +121,10 @@ const Main = () =>{
                             <hr></hr>
                         </span>
                     </section>
-                    <Image className= "efeito-imagem2 efeitohover" src={Imagem} alt="Imagem"/>
+                    <p className="cor-fiap2 fonte-padrao position13 efeito-imagem2">A MELHOR FACULDADE DE TECNOLOGIA DO BRASIL</p>
+                    <Image src={LogoFiap} alt="Logo FIAP" className="position12"/>
+                    <Image className= "efeito-imagem2 efeitohover centro2" src={Imagem} alt="Imagem" width={800} height={800}/>
+                    <hr className="linha hover-fiap"></hr>
                 {/* <section>
 
                     <Agua></Agua>
@@ -136,29 +143,31 @@ const Main = () =>{
                     </div>
                     
                     <Image src={Seta} alt="Seta FIAP" className=""/>
+
+                    <Image src={Mec} alt="Mec FIAP" className="position20" width={350} height={350}/>
                     <p className="fonte-padrao cor-branca">Cursos</p>
                     <p className="fonte-padrao cor-fiap">Cursos de Curta Duracão</p>
                     
                     <span className="span-tecnologia" style={{ display: visible1 ? 'block' : 'none' }}>
                     <p className="fonte-padrao3 cor-branca">Tecnologia</p>
-                        <p className="fonte-padrao4 cor-cinza">Big Data Ecosystem  REMOTO • LIVE </p><hr className="linha"></hr>
-                        <p className="fonte-padrao4 cor-cinza">Creating Dashboards for BI  REMOTO • LIVE </p><hr className="linha"></hr>
-                        <p className="fonte-padrao4 cor-cinza">Big Data Science - Machine Learning & Data Mining • LIVE</p> <hr className="linha"></hr>
-                        <p className="fonte-padrao4 cor-cinza">Storytelling REMOTO • LIVE </p><hr className="linha"></hr>
+                        <p className="fonte-padrao4 cor-cinza hover-fiap">Big Data Ecosystem  REMOTO • LIVE </p><hr className="linha hover-fiap"></hr>
+                        <p className="fonte-padrao4 cor-cinza hover-fiap">Creating Dashboards for BI  REMOTO • LIVE </p><hr className="linha hover-fiap"></hr>
+                        <p className="fonte-padrao4 cor-cinza hover-fiap">Big Data Science - Machine Learning & Data Mining • LIVE</p> <hr className="linha hover-fiap"></hr>
+                        <p className="fonte-padrao4 cor-cinza hover-fiap">Storytelling REMOTO • LIVE </p><hr className="linha hover-fiap"></hr>
                     </span>
                     <span className="span-inovacao" style={{ display: visible2 ? 'block' : 'none' }}>
-                    <p className="fonte-padrao3 cor-branca">Inovacao</p>
+                    <p className="fonte-padrao3 cor-branca">Inovação</p>
                         <p className="fonte-padrao4 cor-cinza">UX DIGITAL </p><hr className="linha"></hr>
-                        <p className="fonte-padrao4 cor-cinza">Creating Dashboards for BI  REMOTO • LIVE </p><hr className="linha"></hr>
-                        <p className="fonte-padrao4 cor-cinza">Storytelling para Negócios • LIVE</p> <hr className="linha"></hr>
-                        <p className="fonte-padrao4 cor-cinza">Chatbots • LIVE </p><hr className="linha"></hr>
+                        <p className="fonte-padrao4 cor-cinza">Creating Dashboards for BI  REMOTO • LIVE </p><hr className="linha hover-fiap"></hr>
+                        <p className="fonte-padrao4 cor-cinza">Storytelling para Negócios • LIVE</p> <hr className="linha hover-fiap"></hr>
+                        <p className="fonte-padrao4 cor-cinza">Chatbots • LIVE </p><hr className="linha hover-fiap"></hr>
                     </span>
                     <span className="span-negocios" style={{ display: visible3 ? 'block' : 'none' }}>
-                    <p className="fonte-padrao3 cor-branca">Negocios</p>
-                        <p className="fonte-padrao4 cor-cinza">Agile Culture • DIGITAL </p><hr className="linha"></hr>
-                        <p className="fonte-padrao4 cor-cinza">DPO Data Protection Officer •LIVE </p><hr className="linha"></hr>
-                        <p className="fonte-padrao4 cor-cinza">IT Business Partner • LIVE</p> <hr className="linha"></hr>
-                        <p className="fonte-padrao4 cor-cinza">Perícia Forense Computacional • LIVE </p><hr className="linha"></hr>
+                    <p className="fonte-padrao3 cor-branca">Negócios</p>
+                        <p className="fonte-padrao4 cor-cinza">Agile Culture • DIGITAL </p><hr className="linha hover-fiap"></hr>
+                        <p className="fonte-padrao4 cor-cinza">DPO Data Protection Officer •LIVE </p><hr className="linha hover-fiap"></hr>
+                        <p className="fonte-padrao4 cor-cinza">IT Business Partner • LIVE</p> <hr className="linha hover-fiap"></hr>
+                        <p className="fonte-padrao4 cor-cinza">Perícia Forense Computacional • LIVE </p><hr className="linha hover-fiap"></hr>
                     </span>
                 </section>
             <Footer></Footer>
