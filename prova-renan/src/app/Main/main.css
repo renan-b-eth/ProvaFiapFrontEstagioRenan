@@ -1,0 +1,18 @@
+
+
+.cor-background-principal{
+    background-color: #060606;
+    height: 80vh;
+    width: 100%;
+}
+.fonte-padrao{
+    font-family: 'Gotham HTF';
+    font-size: 100px;
+    
+}
+.cor-branca{
+    color: white;
+}
+.cor-cinza{
+    color: #4c4b4c;
+}

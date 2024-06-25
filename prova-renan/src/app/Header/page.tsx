@@ -1,0 +1,20 @@
+"use client"
+import "./header.css";
+import LogoFiap from '../assets/logo-fiap.png'
+import Image from "next/image";
+
+const Header = () =>{
+    return(
+        <>
+            <main>
+                <section className="cor-background">
+                    <div className="logo">
+                        <Image src={LogoFiap} alt="Logo FIAP" className="logo-centro"/>
+                    </div>
+                </section>
+               
+            </main>
+        </>
+    )
+}
+export default Header;
