@@ -41,7 +41,7 @@ const Main = () =>{
     setSelected(event.target);
   }
 
-  const handleClick2 = (event:any) => {
+  const handleClick2 = (e:any) => {
     setVisible1(false);
     setVisible2(true);
     setVisible3(false);
@@ -49,7 +49,7 @@ const Main = () =>{
     
   }
 
-  const handleClick3 = (event:any) => {
+  const handleClick3 = (e:any) => {
     setVisible1(false);
     setVisible2(false);
     setVisible3(true);
@@ -135,9 +135,9 @@ const Main = () =>{
                     <div className="titulos">
                                 <nav>
                     <ul>
-                        <li><a className="cor-branca titulos-item" onClick={handleClick1} style={{ color: selected === event.target ? '#F80D5A' : 'white' }}>TECNOLOGIA</a></li>
-                        <li><a className="cor-branca titulos-item" onClick={handleClick2} style={{ color: selected === event.target ? '#F80D5A' : 'white' }}>INOVACAO</a></li>
-                        <li><a className="cor-branca titulos-item" onClick={handleClick3} style={{ color: selected === event.target ? '#F80D5A' : 'white' }}>NEGOCIOS</a></li>
+                        <li><a className="cor-branca titulos-item" onClick={handleClick1}>TECNOLOGIA</a></li>
+                        <li><a className="cor-branca titulos-item" onClick={handleClick2}>INOVACAO</a></li>
+                        <li><a className="cor-branca titulos-item" onClick={handleClick3}>NEGOCIOS</a></li>
                     </ul>
                     </nav>
                     </div>
